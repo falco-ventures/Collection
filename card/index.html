@@ -6,10 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Mickey Moniak 2024 Topps Series 1 Rainbow Foil Angels #74</title>
     <link rel="stylesheet" href="/style.css" />
-
+    <style>
+      body {
+        background-color: rgb(0, 183, 255)
+          ;
+      }
+      /* Force the viewer to have a specific size. This can be changed, of course. */
+      babylon {
+        width: 800px;
+        height: 500px;
+      }
+    </style>
   </head>
 
-  <body onload="document.getElementById('arql-with-banner').click();">
+  <body onload="">
     
     <h1>
       Mickey Moniak 2024 Topps Series 1 Rainbow Foil Angels #74
@@ -40,10 +50,25 @@ Click here to go direct to eBay Listing
 
       /></a>
     </p>
+    <babylon extends="minimal">
+      <model url="./card.glb">
+          <scaling x="1" y="1" z="1"></scaling>
+      </model>
+      <camera>
+          <behaviors>
+              <auto-rotate type="0"></auto-rotate>
+          </behaviors>
+      </camera>
+    <scene>
+  <clear-color r="1" g="0", b="0" a="0"></clear-color>
+</scene>
+  </babylon>
     <hr/>
 
     <script src="cardscript2.js"></script>
+    <script src="https://preview.babylonjs.com/viewer/babylon.viewer.js"></script>
 
 
   </body>
 </html>
+<html>
